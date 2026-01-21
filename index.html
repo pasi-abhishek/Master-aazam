@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO + Social Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Aazam | Filmmaker, Writer & Poet</title>
+    <meta name="description" content="Official website of Master Aazam (Pasi Abhishek) — filmmaker, poet, writer, and founder of Aazamira Production World. Explore works, books, films, and creative vision." />
+    <meta name="keywords" content="Master Aazam, Pasi Abhishek, Aazamira Production World, Poet, Filmmaker, Writer, Creative Producer, Indian Filmmaker, Poetry Collection, Music Videos" />
+    <meta name="author" content="Master Aazam" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.masteraazam.com" />
+    <!-- Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Master Aazam | Filmmaker, Writer & Poet" />
+    <meta property="og:description" content="Official portfolio of Master Aazam — creative producer, storyteller, poet and filmmaker." />
+    <meta property="og:image" content="https://www.masteraazam.com/cover.jpg" />
+    <meta property="og:url" content="https://www.masteraazam.com" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Master Aazam | Filmmaker, Writer & Poet" />
+    <meta name="twitter:description" content="Official portfolio of Master Aazam — creative producer, storyteller, poet and filmmaker." />
+    <meta name="twitter:image" content="https://www.masteraazam.com/cover.jpg" />
+    <!-- Theme -->
+    <meta name="theme-color" content="#0b0b0f" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Sitemap (Optional: Add if you have one) -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Master Aazam",
+            "alternateName": "Pasi Abhishek",
+            "description": "Indian filmmaker, writer, poet, and creative producer. Founder of Aazamira Production World, crafting films, poetry, music videos, and digital stories.",
+            "jobTitle": "Filmmaker, Writer, Poet",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Aazamira Production World",
+                "url": "https://www.masteraazam.com"
+            },
+            "sameAs": [
+                "https://www.instagram.com/aazamatic",
+                "https://www.linkedin.com/in/pasi-abhishek"
+            ],
+            "url": "https://www.masteraazam.com",
+            "image": "https://www.masteraazam.com/cover.jpg",
+            "knowsAbout": ["Filmmaking", "Poetry", "Writing", "Music Videos", "Creative Production"]
+        }
+    </script>
+    <style>
+        :root {
+            --gold: #f5c77a;
+            --dark: #07070b;
+            --glass: rgba(255, 255, 255, 0.08);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background: radial-gradient(circle at top, #151525, #050507);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(14px);
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .logo span {
+            color: var(--gold);
+        }
+        nav a {
+            margin-left: 22px;
+            position: relative;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        /* Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 58px;
+            font-weight: 700;
+        }
+        .hero h1 span {
+            color: var(--gold);
+        }
+        .hero p {
+            margin: 20px 0 30px;
+            color: #ccc;
+            font-size: 18px;
+        }
+        .btn {
+            padding: 14px 38px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, var(--gold), #ffb347);
+            color: #000;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 110px 24px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+        h2 span {
+            color: var(--gold);
+        }
+        .glass {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--glass);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.4s;
+        }
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+        }
+        .card h3 {
+            color: var(--gold);
+        }
+        /* Projects */
+        .project {
+            background: linear-gradient(135deg, #1a1a28, #0b0b12);
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .project::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
+        }
+        .project:hover::before {
+            transform: translateX(100%);
+        }
+        .project h3 {
+            color: var(--gold);
+        }
+        /* Contact */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input,
+        textarea {
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        textarea {
+            height: 130px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #aaa;
+        }
+        /* Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: none;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+            nav a {
+                margin: 0 12px;
+            }
+            .hero h1 {
+                font-size: 38px;
+                line-height: 1.2;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .btn {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+            .glass {
+                padding: 30px 24px;
+            }
+            .card,
+            .project {
+                padding: 28px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            footer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Master <span>Aazam</span></div>
+            <div>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#books">Books</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Master <span>Aazam</span></h1>
+            <p>Filmmaker • Poet • Writer • Storyteller</p>
+            <a href="#contact" class="btn">Connect & Collaborate</a>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="reveal">
+        <h2>About <span>Me</span></h2>
+        <div class="glass">
+            Master Aazam (Pasi Abhishek) is an Indian filmmaker, writer, poet, and creative producer. He is the founder of Aazamira Production World, where he crafts films, poetry, music videos, and digital stories that resonate deeply with audiences. His works explore emotion, society, and the human journey, and he actively supports emerging creative talent through mentorship and collaboration.
+        </div>
+    </section>
+    <!-- Works -->
+    <section id="works" class="reveal">
+        <h2>Major <span>Works</span></h2>
+        <div class="grid">
+            <div class="project">
+                <h3>Desi Monkey</h3>
+                <p>Music Video</p>
+            </div>
+            <div class="project">
+                <h3>Film & Poetry Projects</h3>
+                <p>Cinematic & Literary Works</p>
+            </div>
+            <div class="project">
+                <h3>Aazamira Production World</h3>
+                <p>Creative Platform</p>
+            </div>
+        </div>
+    </section>
+    <!-- Books -->
+    <section id="books" class="reveal">
+        <h2>Books & <span>Poetry</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Lekh by Aazam</h3>
+                <p>Collection of powerful poems</p>
+            </div>
+            <div class="card">
+                <h3>Raagwaanjyoti</h3>
+                <p>Inspirational fiction about music & dreams</p>
+            </div>
+        </div>
+    </section>
+    <!-- Songs -->
+    <section class="reveal">
+        <h2>Worked On <span>Songs</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Sukoon</h3>
+                <p>A soulful romantic song produced under Aazamira Production World, expressing peace, emotions, and heartfelt storytelling.</p>
+            </div>
+            <div class="card">
+                <h3>Aawargi</h3>
+                <p>An emotional lyrical song reflecting love, separation, and the beauty of wandering thoughts.</p>
+            </div>
+            <div class="card">
+                <h3>Mere Yaara</h3>
+                <p>A friendship-based musical project highlighting bonds, memories, and youthful emotions.</p>
+            </div>
+            <div class="card">
+                <h3>Desi Monkey</h3>
+                <p>A high-energy music video showcasing desi swag, modern beats, and Master Aazam’s creative direction.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+        <h2>Contact <span>Me</span></h2>
+        <div class="glass">
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message"></textarea>
+                <button class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>© 2026 Master Aazam • Aazamira Production World</footer>
+    <script>
+        document.querySelectorAll(".reveal").forEach((elem) => {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("active");
+                        }
+                    });
+                },
+                { threshold: 0.15 }
+            );
+            observer.observe(elem);
+        });
+    </script>
+</body>
+</html>
